@@ -1,0 +1,245 @@
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1%;   
+}
+
+.block .left-block .btn-search{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px ;
+}
+.block .left-block{
+    margin-left: -8%;
+}
+
+.block .left-block .btn-search img{
+    color: transparent;
+    background:transparent;
+    outline: none;
+    width: 25px;
+    padding: 5px;
+    height: 25px;
+}
+.block .left-block .btn-search button{
+    color: white;
+    background: rgb(0,0,0);
+    padding: 10px;
+    border-radius: 4px;
+    padding-right: 25px;
+    
+}
+.block .left-block .main-data{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 255);
+  border-radius: 4px;
+  padding: 10px;
+  width: 400px;
+}
+.main-data:hover{
+    border: 3px solid black;
+}
+.block .left-block .main-data h2{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.block .left-block .main-data .my-text{
+    display: flex;
+    justify-content: space-between;
+}
+.my-text .desc{
+    width: 250px;
+}
+.my-text .date{
+    font-size: 13px;
+    margin-top: 15px;
+    color: rgb(162, 157, 157);
+}
+
+.right-block{
+    margin-left: -7%;
+    margin-top: -7%;
+    height: 500px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 255);
+}
+.right-block{
+    padding: 0px 20px;
+}
+
+.right-block h1,p{
+    padding: 10px;
+}
+.right-block h1{
+    padding: 10px 20px;
+}
+.right-block p{
+    margin: 0px 10px 10px 10px;
+}
+.main-data {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-data:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .main-data h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .main-data .my-text {
+    margin-top: 10px;
+  }
+  
+  .main-data .desc {
+    font-size: 1em;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .main-data .desc:hover {
+    color: rgb(0,0,0);
+  }
+  
+  .main-data .date {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4caf50;
+  }
+  
+
+/* Mobile Styles */
+@media (max-width: 1200px) {
+  .block {
+      flex-direction: column;
+  }
+
+  .block .left-block {
+      margin-left: 0;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .block .left-block .btn-search {
+      flex-direction: row;
+  }
+
+  .block .left-block .main-data {
+      width: 100%;
+  }
+
+  .right-block {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-top: 25px;
+      align-items: center;
+      text-align: center;
+  }
+
+  .right-block h1, p {
+      padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .block {
+      flex-direction: column;
+  }
+
+  .block .left-block {
+      margin-left: 0;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .block .left-block .btn-search {
+      flex-direction: row;
+  }
+
+  .block .left-block .main-data {
+      width: 100%;
+  }
+
+  .right-block {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      align-items: center;
+      text-align: center;
+  }
+
+  .right-block h1, p {
+      padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block .left-block .btn-search button {
+      padding: 8px;
+  }
+
+  .main-data h2 {
+      font-size: 1.2em;
+  }
+
+  .main-data .desc {
+      font-size: 0.9em;
+  }
+
+  .main-data .date {
+      font-size: 0.8em;
+  }
+
+  input[type="text"], textarea {
+      padding: 6px;
+  }
+
+  button {
+      padding: 6px 12px;
+      font-size: 0.9em;
+  }
+}
